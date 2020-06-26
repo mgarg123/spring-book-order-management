@@ -1,0 +1,26 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/library-mgmt?allowPublicKeyRetrieval=true&useSSL=false
+        username: hbstudent
+        password: hbstudent
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        show-sql: true
+        hibernate:            
+            ddl-auto: update
+    mvc:
+        view:
+            prefix: /WEB-INF/pages/
+            suffix: .jsp
+        dispatch-options-request: true
+stripe:
+    keys:
+        secret: sk_test_9aTAr0EgD7ZfMKTEUpXpkvVM
+        public: pk_test_bIlVT5FuibupFehPyVeYQpwi
+
+
+#mggarg771
+# stripe:
+#     keys:
+#         secret: sk_test_VQgECnXO0eb5kpqljv1ZkQXI
+#         public: pk_test_NbXcIKXLuWGcxbT38qaosug8
